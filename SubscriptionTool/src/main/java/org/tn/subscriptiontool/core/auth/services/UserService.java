@@ -9,12 +9,4 @@ import org.tn.subscriptiontool.core.auth.repository.UserRepository;
 public class UserService {
     private UserRepository userRepository;
 
-    @Autowired
-    public UserService(UserRepository userRepository) {
-        this.userRepository = userRepository;
-    }
-
-    public ResponseEntity<String> encode(String password) {
-        return ResponseEntity.ok("");
-    }
 }
